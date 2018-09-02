@@ -2,7 +2,7 @@ package com.californiadreamshostel.firebaseclient
 
 import com.google.firebase.database.DataSnapshot
 
-class ReferenceItemAdapter(private val group: String?, private var itemFactory: ((String, String, String) -> ReferenceItem)? = null) {
+class ReferenceItemAdapter(private val group: String?, var itemFactory: ((String, String, String) -> ReferenceItem)? = null) {
 
     companion object {
         const val ROOT = "Root"
